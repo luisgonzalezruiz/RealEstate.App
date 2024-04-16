@@ -6,9 +6,31 @@
     xmlns:local="clr-namespace:RealEstate.App.Views"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
+    <!--<ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage" />-->
+
+    <TabBar>
+        <!--  Home Page  -->
+        <Tab Title="Home" Icon="home.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+        </Tab>
+
+        <!--  Recently Watched Page  -->
+        <Tab Title="Recently Viewed" Icon="pin.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+        </Tab>
+
+        <!--  Cart Page  -->
+        <Tab Title="Cart" Icon="cart.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+        </Tab>
+
+        <!--  Profile Page  -->
+        <Tab Title="Account" Icon="profile.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+        </Tab>
+    </TabBar>
 
 </Shell>
