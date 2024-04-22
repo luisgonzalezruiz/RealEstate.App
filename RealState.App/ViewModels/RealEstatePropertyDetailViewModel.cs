@@ -8,7 +8,8 @@ namespace RealEstate.App.ViewModels
     
     public partial class RealEstatePropertyDetailViewModel : BaseViewModel, IRealEstatePropertyDetailViewModel, IQueryAttributable
     {
-        [ObservableProperty]private RealEstateProperty _realEstateProperty;
+        [ObservableProperty]
+        private RealEstateProperty _realEstateProperty;
 
         public RealEstatePropertyDetailViewModel()
         {
