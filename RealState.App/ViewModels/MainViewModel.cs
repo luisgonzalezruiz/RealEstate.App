@@ -10,8 +10,12 @@ namespace RealEstate.App.ViewModels
     public partial class MainViewModel : BaseViewModel, IMainViewModel
     {
         private readonly IRealEstatePropertyServices _realEstatePropertyServices;
-        [ObservableProperty] private ObservableCollection<Category> _categories;
-        [ObservableProperty] private ObservableCollection<RealEstateProperty> _recommendations;
+
+        [ObservableProperty] 
+        private ObservableCollection<Category> _categories;
+
+        [ObservableProperty] 
+        private ObservableCollection<RealEstateProperty> _recommendations;
 
         public MainViewModel(IRealEstatePropertyServices realEstatePropertyServices)
         {
